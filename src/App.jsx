@@ -1,7 +1,8 @@
 import { Navbar } from './components/Navbar.jsx';
 import { Hero } from './components/Hero.jsx';
-import { WorkSection } from './components/WorkSection.jsx';
+// import { WorkSection } from './components/WorkSection.jsx';
 import { AboutSection } from './components/AboutSection.jsx';
+import { ProjectsGallery } from './components/ProjectsGallery.jsx';
 import { ServicesSection } from './components/ServicesSection.jsx';
 import { ContactSection } from './components/ContactSection.jsx';
 
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <WorkSection />
+        {/* <WorkSection /> */}
+        <ProjectsGallery />
         <AboutSection />
         <ServicesSection />
         <ContactSection />
