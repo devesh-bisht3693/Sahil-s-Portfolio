@@ -25,10 +25,10 @@ export function ContactSection() {
               <p>
                 Email:{' '}
                 <a
-                  href="mailto:sahil.chauhan111171@gmail.com"
+                  href="mailto:deveshbisht3693@gmail.com"
                   className="font-medium text-cyan-300 hover:text-cyan-200"
                 >
-                  sahil.chauhan111171@gmail.com
+                  deveshbisht3693@gmail.com
                 </a>
               </p>
               <p>
@@ -94,9 +94,6 @@ export function ContactSection() {
               <button type="submit" className="btn-primary">
                 Send enquiry
               </button>
-              <p className="text-[0.7rem] text-slate-400">
-                This form is static – wire it to your email or form tool when you&apos;re ready.
-              </p>
             </div>
           </form>
         </motion.div>
