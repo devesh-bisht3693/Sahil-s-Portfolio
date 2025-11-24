@@ -1,6 +1,46 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+}
+
 export function ContactSection() {
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    project: '',
+  });
+
+  const [status, setStatus] = useState('idle'); // idle | submitting | success | error
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setStatus('submitting');
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'contact',
+          ...formValues,
+        }),
+      });
+
+      setStatus('success');
+      setFormValues({ name: '', email: '', project: '' });
+    } catch (error) {
+      setStatus('error');
+    }
+  };
   return (
     <section id="contact" className="bg-slate-950">
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
@@ -44,7 +84,7 @@ export function ContactSection() {
             data-netlify="true"
             netlify-honeypot="bot-field"
             className="glass-panel space-y-4 rounded-2xl p-4 text-sm"
-            netlify
+            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
@@ -64,6 +104,8 @@ export function ContactSection() {
                   type="text"
                   placeholder="Your name"
                   className="w-full rounded-lg border border-slate-700/80 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none ring-0 transition focus:border-cyan-400/80 focus:ring-1 focus:ring-cyan-400/40"
+                  value={formValues.name}
+                  onChange={handleChange}
                 />
               </div>
               <div className="space-y-1.5">
@@ -76,6 +118,8 @@ export function ContactSection() {
                   type="email"
                   placeholder="you@example.com"
                   className="w-full rounded-lg border border-slate-700/80 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none ring-0 transition focus:border-cyan-400/80 focus:ring-1 focus:ring-cyan-400/40"
+                  value={formValues.email}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -89,12 +133,28 @@ export function ContactSection() {
                 rows={4}
                 placeholder="Tell me about your brand, goals, and timeline."
                 className="w-full resize-none rounded-lg border border-slate-700/80 bg-slate-900/70 px-3 py-2 text-xs text-slate-100 outline-none ring-0 transition focus:border-cyan-400/80 focus:ring-1 focus:ring-cyan-400/40"
+                value={formValues.project}
+                onChange={handleChange}
               />
             </div>
             <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
-              <button type="submit" className="btn-primary">
-                Send enquiry
+              <button
+                type="submit"
+                className="btn-primary"
+                disabled={status === 'submitting'}
+              >
+                {status === 'submitting' ? 'Sending…' : 'Send enquiry'}
               </button>
+              {status === 'success' && (
+                <p className="text-[0.7rem] text-emerald-400">
+                  Thanks for reaching out — I&apos;ll get back to you soon.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-[0.7rem] text-rose-400">
+                  Something went wrong. Please try again or email me directly.
+                </p>
+              )}
             </div>
           </form>
         </motion.div>
