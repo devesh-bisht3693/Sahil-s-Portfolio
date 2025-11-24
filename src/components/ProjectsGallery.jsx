@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const items = [
@@ -185,15 +185,32 @@ const filters = [
 ];
 
 export function ProjectsGallery() {
+  const INITIAL_VISIBLE = 9;
+  const LOAD_MORE_STEP = 9;
+
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedItem, setSelectedItem] = useState(null);
   const mediaRef = useRef(null);
   const [isMediaFullscreen, setIsMediaFullscreen] = useState(false);
 
+  // Shuffle items once so the "All" view feels fresh on each page load
+  const shuffledAllItems = useMemo(
+    () => [...items].sort(() => Math.random() - 0.5),
+    [],
+  );
+
   const filteredItems =
     activeFilter === 'all'
-      ? items
+      ? shuffledAllItems
       : items.filter((item) => item.type === activeFilter);
+
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
+
+  useEffect(() => {
+    setVisibleCount(INITIAL_VISIBLE);
+  }, [activeFilter]);
+
+  const visibleItems = filteredItems.slice(0, visibleCount);
 
   return (
     <section id="gallery" className="border-b border-slate-800/80 bg-slate-950/90">
@@ -230,7 +247,7 @@ export function ProjectsGallery() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence>
-            {filteredItems.map((item) => (
+            {visibleItems.map((item) => (
               <motion.article
                 key={item.title + item.src}
                 layout
@@ -250,6 +267,7 @@ export function ProjectsGallery() {
                       loop
                       autoPlay
                       playsInline
+                      preload="metadata"
                     />
                   ) : (
                     <img
@@ -275,6 +293,18 @@ export function ProjectsGallery() {
             ))}
           </AnimatePresence>
         </div>
+
+        {visibleCount < filteredItems.length && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              className="btn-ghost text-xs"
+              onClick={() => setVisibleCount((prev) => prev + LOAD_MORE_STEP)}
+            >
+              Load more work
+            </button>
+          </div>
+        )}
 
         {/* Lightbox modal */}
         <AnimatePresence>
