@@ -44,6 +44,7 @@ export function ContactSection() {
             data-netlify="true"
             netlify-honeypot="bot-field"
             className="glass-panel space-y-4 rounded-2xl p-4 text-sm"
+            netlify
           >
             <input type="hidden" name="form-name" value="contact" />
             <p className="hidden">
