@@ -184,6 +184,59 @@ const filters = [
   { id: 'motion', label: 'Motion' },
 ];
 
+function LazyMedia({ item }) {
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '0px 0px 120px 0px', threshold: 0.1 },
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={containerRef} className="relative aspect-[4/3] overflow-hidden">
+      {isVisible ? (
+        item.isVideo ? (
+          <video
+            src={encodeURI(item.src)}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            muted
+            loop
+            autoPlay
+            playsInline
+            preload="metadata"
+          />
+        ) : (
+          <img
+            src={encodeURI(item.src)}
+            alt={item.title}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        )
+      ) : (
+        <div className="h-full w-full animate-pulse bg-slate-900/80" />
+      )}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+    </div>
+  );
+}
+
 export function ProjectsGallery() {
   const INITIAL_VISIBLE = 9;
   const LOAD_MORE_STEP = 9;
@@ -225,6 +278,9 @@ export function ProjectsGallery() {
               A snapshot of social campaigns, thumbnails, event visuals, and motion pieces created
               across client and in-house projects.
             </p>
+            <p className="mt-2 text-[0.7rem] text-slate-500">
+              All work © Sahil Chauhan. Please do not reproduce without permission.
+            </p>
           </div>
 
           <div className="inline-flex self-start rounded-full border border-slate-700/80 bg-slate-900/70 p-1 text-xs text-slate-200">
@@ -258,27 +314,7 @@ export function ProjectsGallery() {
                 className="group relative overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-950/80 cursor-pointer"
                 onClick={() => setSelectedItem(item)}
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  {item.isVideo ? (
-                    <video
-                      src={encodeURI(item.src)}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                      muted
-                      loop
-                      autoPlay
-                      playsInline
-                      preload="metadata"
-                    />
-                  ) : (
-                    <img
-                      src={encodeURI(item.src)}
-                      alt={item.title}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  )}
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </div>
+                <LazyMedia item={item} />
 
                 <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 px-3 pb-3 pt-6 text-[0.75rem] text-slate-100">
                   <div>
