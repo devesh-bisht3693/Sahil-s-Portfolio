@@ -25,10 +25,10 @@ export function ContactSection() {
               <p>
                 Email:{' '}
                 <a
-                  href="mailto:youremail@example.com"
+                  href="mailto:sahil.chauhan111171@gmail.com"
                   className="font-medium text-cyan-300 hover:text-cyan-200"
                 >
-                  youremail@example.com
+                  sahil.chauhan111171@gmail.com
                 </a>
               </p>
               <p>
@@ -38,7 +38,20 @@ export function ContactSection() {
             </div>
           </div>
 
-          <form className="glass-panel space-y-4 rounded-2xl p-4 text-sm">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            className="glass-panel space-y-4 rounded-2xl p-4 text-sm"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden">
+              <label>
+                Don&apos;t fill this out if you&apos;re human:
+                <input name="bot-field" />
+              </label>
+            </p>
             <div className="grid gap-3 md:grid-cols-2">
               <div className="space-y-1.5">
                 <label htmlFor="name" className="text-xs font-medium text-slate-200">
@@ -99,5 +112,3 @@ export function ContactSection() {
     </section>
   );
 }
-
-
