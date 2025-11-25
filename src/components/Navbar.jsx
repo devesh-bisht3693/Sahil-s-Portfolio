@@ -44,7 +44,7 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <div className="hidden items-center gap-2 md:flex">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sahil-chauhan-870953182"
               target="_blank"
               rel="noreferrer"
               className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 text-[0.7rem] text-slate-200 transition hover:border-cyan-400/70 hover:text-cyan-200"
