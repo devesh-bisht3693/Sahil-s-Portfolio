@@ -11,7 +11,7 @@ export function Navbar() {
       variants={navVariants}
       initial="hidden"
       animate="visible"
-      className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl"
+      className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/70 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
         <div className="flex items-center gap-3">
@@ -27,8 +27,8 @@ export function Navbar() {
         </div>
 
         <nav className="hidden items-center gap-6 text-xs font-medium text-slate-300 md:flex">
-          <a href="#work" className="hover:text-cyan-300 transition-colors">
-            Work
+          <a href="#gallery" className="hover:text-cyan-300 transition-colors">
+            Gallery
           </a>
           <a href="#about" className="hover:text-cyan-300 transition-colors">
             About
@@ -41,7 +41,25 @@ export function Navbar() {
           </a>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <div className="hidden items-center gap-2 md:flex">
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 text-[0.7rem] text-slate-200 transition hover:border-cyan-400/70 hover:text-cyan-200"
+            >
+              in
+            </a>
+            <a
+              href="https://www.behance.net/sahilchauhan19"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 text-[0.7rem] text-slate-200 transition hover:border-cyan-400/70 hover:text-cyan-200"
+            >
+              Bē
+            </a>
+          </div>
           <a
             href="#contact"
             className="hidden rounded-full border border-slate-700/80 px-4 py-1.5 text-xs font-semibold text-slate-100 hover:border-cyan-400/60 hover:text-cyan-200 md:inline-flex"

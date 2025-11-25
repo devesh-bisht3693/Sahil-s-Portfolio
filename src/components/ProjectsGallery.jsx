@@ -245,6 +245,10 @@ export function ProjectsGallery() {
   const [selectedItem, setSelectedItem] = useState(null);
   const mediaRef = useRef(null);
   const [isMediaFullscreen, setIsMediaFullscreen] = useState(false);
+  const [zoomScale, setZoomScale] = useState(1);
+  const [zoomOffset, setZoomOffset] = useState({ x: 0, y: 0 });
+  const [isPanning, setIsPanning] = useState(false);
+  const panStartRef = useRef({ x: 0, y: 0 });
 
   // Shuffle items once so the "All" view feels fresh on each page load
   const shuffledAllItems = useMemo(
@@ -262,6 +266,58 @@ export function ProjectsGallery() {
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
   }, [activeFilter]);
+
+  useEffect(() => {
+    // Reset zoom/fullscreen state when switching items or closing modal
+    setIsMediaFullscreen(false);
+    setZoomScale(1);
+    setZoomOffset({ x: 0, y: 0 });
+    setIsPanning(false);
+  }, [selectedItem]);
+
+  const handleWheelZoom = (event) => {
+    if (!selectedItem || selectedItem.isVideo) return;
+    event.preventDefault();
+    event.stopPropagation();
+
+    const delta = -event.deltaY;
+    const step = delta > 0 ? 0.1 : -0.1;
+
+    setZoomScale((prev) => {
+      const next = Math.min(3.5, Math.max(1, prev + step));
+      if (next === 1) {
+        setZoomOffset({ x: 0, y: 0 });
+      }
+      return next;
+    });
+  };
+
+  const handleMouseDown = (event) => {
+    if (!selectedItem || selectedItem.isVideo || zoomScale === 1) return;
+    event.preventDefault();
+    event.stopPropagation();
+    setIsPanning(true);
+    panStartRef.current = {
+      x: event.clientX - zoomOffset.x,
+      y: event.clientY - zoomOffset.y,
+    };
+  };
+
+  const handleMouseMove = (event) => {
+    if (!isPanning) return;
+    event.preventDefault();
+    event.stopPropagation();
+    const x = event.clientX - panStartRef.current.x;
+    const y = event.clientY - panStartRef.current.y;
+    setZoomOffset({ x, y });
+  };
+
+  const endPan = (event) => {
+    if (event) {
+      event.stopPropagation();
+    }
+    setIsPanning(false);
+  };
 
   const visibleItems = filteredItems.slice(0, visibleCount);
 
@@ -380,7 +436,15 @@ export function ProjectsGallery() {
                         <img
                           src={encodeURI(selectedItem.src)}
                           alt={selectedItem.title}
-                          className="h-full w-full object-contain"
+                          className="h-full w-full object-contain cursor-grab transition-transform duration-300 ease-out active:cursor-grabbing"
+                          style={{
+                            transform: `translate(${zoomOffset.x}px, ${zoomOffset.y}px) scale(${zoomScale})`,
+                          }}
+                          onWheel={handleWheelZoom}
+                          onMouseDown={handleMouseDown}
+                          onMouseMove={handleMouseMove}
+                          onMouseUp={endPan}
+                          onMouseLeave={endPan}
                         />
                       )}
                       <button
@@ -394,7 +458,7 @@ export function ProjectsGallery() {
                       >
                         Close ✕
                       </button>
-                      {!selectedItem.isVideo && !isMediaFullscreen && (
+                      {!selectedItem.isVideo && !isMediaFullscreen && zoomScale === 1 && (
                         <button
                           type="button"
                           aria-label="Fullscreen"

@@ -15,6 +15,28 @@ body {
   background: radial-gradient(circle at top left, #0f172a, #020617 60%, #000);
 }
 
+.hero-space {
+  position: relative;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.32), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, 0.26), transparent 55%),
+    radial-gradient(circle at 0% 80%, rgba(56, 189, 248, 0.18), transparent 55%),
+    radial-gradient(circle at 100% 80%, rgba(244, 63, 94, 0.16), transparent 55%),
+    radial-gradient(circle at 50% -10%, #020617, #020617 60%, #000);
+  overflow: hidden;
+}
+
+.hero-space::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 10% 20%, rgba(148, 163, 184, 0.7) 0, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(148, 163, 184, 0.5) 0, transparent 45%),
+    radial-gradient(circle at 40% 80%, rgba(148, 163, 184, 0.4) 0, transparent 50%);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
 ::selection {
   background-color: rgba(56, 189, 248, 0.25);
   color: #f9fafb;
