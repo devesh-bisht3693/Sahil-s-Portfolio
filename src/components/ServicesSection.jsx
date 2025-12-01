@@ -17,7 +17,7 @@ const services = [
     title: 'Editorial & Layout',
     description:
       'Sharp, considered layouts for decks, presentations, brochures, and digital publications.',
-    items: ['Pitch decks', 'Brochures', 'Lookbooks & zines'],
+    items: ['Pitch decks', 'Brochures', 'Whitepapers and Newsletter'],
   },
 ];
 
@@ -46,7 +46,7 @@ export function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.7, delay: index * 0.05, ease: [0.19, 1, 0.22, 1] }}
-              className="glass-panel flex flex-col rounded-2xl p-4"
+              className="space-y-4 rounded-2xl border border-cyan-300 bg-slate-950/70 p-4 transition-colors transition-shadow duration-300 hover:border-cyan-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.7)]"
             >
               <h3 className="text-sm font-semibold text-slate-50 sm:text-[0.95rem]">
                 {service.title}

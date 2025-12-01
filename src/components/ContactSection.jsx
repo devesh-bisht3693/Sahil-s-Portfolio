@@ -83,7 +83,7 @@ export function ContactSection() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            className="glass-panel space-y-4 rounded-2xl p-4 text-sm"
+            className="space-y-4 rounded-2xl border border-cyan-300 bg-slate-950/70 p-4 transition-colors transition-shadow duration-300 hover:border-cyan-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.7)]"
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />

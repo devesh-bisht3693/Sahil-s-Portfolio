@@ -11,7 +11,7 @@ const container = {
 };
 
 export function Hero() {
-  const roles = ['Graphic Designer', 'Illustrator', 'Video Editor'];
+  const roles = ['Graphic Designer', 'Illustrator'];
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -64,16 +64,16 @@ export function Hero() {
           </span>
 
           <div className="space-y-4">
-            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight text-slate-50 sm:text-5xl lg:text-[3.4rem]">
-              Hi! I&apos;m Sahil,
-              <br />
+            <h1 className="font-display text-4xl font-semibold leading-tight tracking-tight text-slate-50 sm:text-5xl lg:text-[3.4rem] sm:whitespace-nowrap">
+               Hi! I&apos;m Sahil Chauhan,
+            </h1>
+            <h2 className="font-display text-4xl font-semibold leading-tight tracking-tight text-slate-50 sm:text-5xl lg:text-[3.4rem]">
               <span className="min-w-[11ch] bg-gradient-to-r from-cyan-300 via-sky-400 to-fuchsia-400 bg-clip-text text-transparent">
                 {displayText || '\u00A0'}
               </span>
-            </h1>
+            </h2>
             <p className="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              I design bold, story-driven visuals for brands, campaigns, and digital products. From
-              identity systems to motion graphics, I help ideas stand out on every screen.
+              I craft clear, story-focused visuals for brands, campaigns, and digital products. From identity design to bold digital creatives, I aim to create work that feels thoughtful, purposeful, and visually strong across every screen.
             </p>
           </div>
 
@@ -98,10 +98,6 @@ export function Hero() {
             <div className="flex items-center gap-2">
               <span className="h-1 w-6 rounded-full bg-fuchsia-400/70" />
               <span>Social media &amp; campaign visuals</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="h-1 w-6 rounded-full bg-emerald-400/70" />
-              <span>Motion, UI accents &amp; layout design</span>
             </div>
           </div>
         </motion.div>

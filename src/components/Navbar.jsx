@@ -42,12 +42,13 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <div className="hidden items-center gap-2 md:flex">
+          <div className="hidden items-center gap-2.5 md:flex">
             <a
               href="https://www.linkedin.com/in/sahil-chauhan-870953182"
               target="_blank"
               rel="noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 text-[0.7rem] text-slate-200 transition hover:border-cyan-400/70 hover:text-cyan-200"
+              aria-label="LinkedIn"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-400/70 bg-slate-900/80 text-[0.8rem] font-semibold text-slate-50 shadow-[0_0_18px_rgba(56,189,248,0.35)] transition-colors transition-shadow duration-300 hover:bg-cyan-400 hover:text-slate-950 hover:shadow-[0_0_26px_rgba(56,189,248,0.75)]"
             >
               in
             </a>
@@ -55,14 +56,24 @@ export function Navbar() {
               href="https://www.behance.net/sahilchauhan19"
               target="_blank"
               rel="noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/80 text-[0.7rem] text-slate-200 transition hover:border-cyan-400/70 hover:text-cyan-200"
+              aria-label="Behance"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-400/70 bg-slate-900/80 text-[0.8rem] font-semibold tracking-tight text-slate-50 shadow-[0_0_18px_rgba(56,189,248,0.35)] transition-colors transition-shadow duration-300 hover:bg-cyan-400 hover:text-slate-950 hover:shadow-[0_0_26px_rgba(56,189,248,0.75)]"
             >
               Bē
+            </a>
+            <a
+              href="https://www.instagram.com/xinshel/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-400/70 bg-slate-900/80 text-[0.8rem] font-semibold text-slate-50 shadow-[0_0_18px_rgba(56,189,248,0.35)] transition-colors transition-shadow duration-300 hover:bg-cyan-400 hover:text-slate-950 hover:shadow-[0_0_26px_rgba(56,189,248,0.75)]"
+            >
+              IG
             </a>
           </div>
           <a
             href="#contact"
-            className="hidden rounded-full border border-slate-700/80 px-4 py-1.5 text-xs font-semibold text-slate-100 hover:border-cyan-400/60 hover:text-cyan-200 md:inline-flex"
+            className="hidden rounded-full border border-cyan-400/70 bg-slate-900/80 px-4 py-1.5 text-xs font-semibold text-slate-50 shadow-[0_0_18px_rgba(56,189,248,0.35)] transition-colors transition-shadow duration-300 hover:bg-cyan-400 hover:text-slate-950 hover:shadow-[0_0_26px_rgba(56,189,248,0.75)] md:inline-flex"
           >
             Let&apos;s talk
           </a>
