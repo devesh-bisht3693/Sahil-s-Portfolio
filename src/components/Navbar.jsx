@@ -78,7 +78,7 @@ export function Navbar() {
             Let&apos;s talk
           </a>
           <a
-            href="/Sahil-Chauhan_Resume 2025.pdf"
+            href="/Sahil_Chauhan-CV-2026-Interactive.pdf"
             download
             className="btn-primary text-xs px-4 py-1.5"
           >
