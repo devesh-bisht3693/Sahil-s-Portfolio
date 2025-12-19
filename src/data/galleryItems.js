@@ -249,5 +249,12 @@ export const galleryItems = [
         category: 'Motion',
         isVideo: true,
       },
+      {
+        title: 'Assignment',
+        src: 'https://res.cloudinary.com/dr4echl2l/video/upload/v1766129236/Assignment_kzfxc4.mp4',
+        type: 'motion',
+        category: 'Motion',
+        isVideo: true,
+      },
 ];
 
