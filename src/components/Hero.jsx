@@ -82,7 +82,7 @@ export function Hero() {
               View Gallery
             </a>
             <a
-              href="/Sahil_Chauhan-CV-2026-Interactive.pdf"
+              href="/Sahil_Chauhan-CV-2026.pdf"
               download
               className="btn-ghost"
             >
