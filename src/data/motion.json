@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Music Day — Campaign Motion",
+    "category": "Social Campaign",
+    "videoUrl": "https://res.cloudinary.com/dr4echl2l/video/upload/v1771818830/Music_day_5_vyjgoy.mp4"
+  },
+  {
+    "id": 2,
+    "title": "Pentonic Smart TV — Motion Piece",
+    "category": "Product Campaign",
+    "videoUrl": "https://res.cloudinary.com/dr4echl2l/video/upload/v1771818796/Smart_TV-4_n6hkfz.mp4"
+  },
+  {
+    "id": 3,
+    "title": "Vintage Photography — Social Reel",
+    "category": "Social Campaign",
+    "videoUrl": "https://res.cloudinary.com/dr4echl2l/video/upload/v1771818815/How_to_take_vintage_style_photograph-with_music_olefxq.mp4"
+  },
+  {
+    "id": 4,
+    "title": "PBM Fall Edition — Campaign Motion",
+    "category": "Editorial Motion",
+    "videoUrl": "https://res.cloudinary.com/dr4echl2l/video/upload/v1771818800/PBM_fall_edition_1_xstcem.mp4"
+  }
+]

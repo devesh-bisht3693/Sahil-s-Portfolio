@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "type": "video",
+    "title": "Motion Assignment",
+    "url": "https://res.cloudinary.com/dr4echl2l/video/upload/v1766129236/Assignment_kzfxc4.mp4"
+  },
+  {
+    "id": 2,
+    "type": "video",
+    "title": "Pinterest Video Pin",
+    "url": "https://res.cloudinary.com/dr4echl2l/video/upload/v1771823518/Task_2__pintrest_video_pin_dnnxih.mp4"
+  },
+  {
+    "id": 3,
+    "type": "image",
+    "title": "Bike Visual",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823464/Bike_c3z5gs.jpg"
+  },
+  {
+    "id": 4,
+    "type": "image",
+    "title": "AI Generated Concept",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823467/ChatGPT_Image_Feb_18_2026_01_09_45_PM_fdzsvw.png"
+  },
+  {
+    "id": 5,
+    "type": "image",
+    "title": "Plastic Free Day",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823957/Plastic_free_day-1_r2ooya.jpg"
+  },
+  {
+    "id": 6,
+    "type": "image",
+    "title": "Dussehra 2025",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823551/Dusshera-2025-1_npbips.jpg"
+  },
+  {
+    "id": 7,
+    "type": "image",
+    "title": "Q3 Visual",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823629/Q-3_rln75b.jpg"
+  },
+  {
+    "id": 8,
+    "type": "image",
+    "title": "Reel Thumbnail",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823798/Reel-Thumbnail-1a_uf4wni.jpg"
+  },
+  {
+    "id": 9,
+    "type": "image",
+    "title": "Stock Visual",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823570/Stock-2_yomx5d.jpg"
+  },
+  {
+    "id": 10,
+    "type": "image",
+    "title": "Task Concept",
+    "url": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771823547/TASK-3b_jtdkiw.jpg"
+  }
+]
+

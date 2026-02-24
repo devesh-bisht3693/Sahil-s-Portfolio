@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "MediaTek Filogic - Technical Infographic",
+    "description": "Long format campaign infographic designed to translate complex ASIC and data center capabilities into a structured visual narrative, highlighting MediaTek's 28-year silicon design legacy.",
+    "type": "scrollable",
+    "croppedImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771566533/3_wn3qdh.png",
+    "fullImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771414885/MediaTek-Filogic-Infographic_gsx6d2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "MediaTek Chipset Infographics",
+    "description": "Product level infographics designed to translate complex chipset architecture into clear, structured, and visually differentiated communication, balancing technical depth with evolving campaign aesthetics.",
+    "type": "scrollable",
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771566868/MediaTek-fILOGIC-860-A-Infographic-updated-b25-april_fk3rww.jpg"
+  },
+  {
+    "id": 3,
+    "title": "MediaTek Chipset Infographics",
+    "description": "Product level infographics designed to translate complex chipset architecture into clear, structured, and visually differentiated communication, balancing technical depth with evolving campaign aesthetics.",
+    "type": "scrollable",
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771585417/Kompanio-540_xtv4dg.jpg"
+  },
+  {
+    "id": 4,
+    "title": "MediaTek Chipset Infographics",
+    "description": "Product level infographics designed to translate complex chipset architecture into clear, structured, and visually differentiated communication, balancing technical depth with evolving campaign aesthetics.",
+    "type": "flip",
+    "frontImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771570041/1_klqvbi.jpg",
+    "backImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771570040/2_dgpita.jpg"
+  }
+]

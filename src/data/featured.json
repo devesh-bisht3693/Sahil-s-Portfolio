@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "NVIDIA x MediaTek - AI Factory Feature",
+    "category": "Enterprise Campaign",
+    "description": "Enterprise hero visual developed for NVIDIA's Success Stories platform, showcasing MediaTek's AI Factory initiative.",
+    "tags": ["Enterprise Campaign", "AI Visualization", "Web Hero"],
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771482953/Screenshot_2026-02-19_120444_tau5pu.png"
+  },
+  {
+    "id": 2,
+    "title": "MediaTek x AI - NRF Event Experience",
+    "category": "Event Visual",
+    "description": "Immersive retail-tech visualization created for MediaTek's NRF showcase, integrating AI-assisted compositing and environmental reconstruction.",
+    "tags": ["Event Visual", "Tech Campaign", "Advanced Compositing"],
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771483578/612376922_1186449000277791_7632785273697230536_n_xthwk5.jpg"
+  },
+  {
+    "id": 3,
+    "title": "MediaTek - ASIC Innovation Campaign",
+    "category": "Data Visualization",
+    "description": "Long-form strategic infographic translating complex semiconductor architecture into structured visual storytelling.",
+    "tags": ["Data Visualization", "Campaign Infographic", "Product Communication"],
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771483844/ASIC_-IOT_studies_wzyaoc.jpg"
+  }
+]

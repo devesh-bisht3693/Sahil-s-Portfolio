@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "group": "Dimensity 9500 & 9400 Launch Thumbnails",
+    "groupDescription": "Designed to capture attention instantly while highlighting core technologies such as AI performance, imaging advancements, and next-generation connectivity. Each visual balances cinematic impact with clear chipset positioning, ensuring strong brand recall across global campaign rollouts.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Dimensity 9500 Launch Thumbnail",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771820574/D9500_video_YT_thumb-Option-1_saytpo.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Dimensity 9400 HDR Full Range Zoom",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771820573/D9400_HDR_YT_thumbnail_full_range_HDR_zoom_nclwz6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "group": "Product & Event Campaign Systems",
+    "groupDescription": "Campaign visuals supporting product launches and major events, crafted to deliver clear technology messaging and high-impact presence across video-first platforms.",
+    "items": [
+      {
+        "id": 3,
+        "title": "Product Campaign Thumbnail",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771820573/maxresdefault_tvrctm.jpg"
+      },
+      {
+        "id": 4,
+        "title": "MWC 2025 Event Campaign",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771820574/mwc_25_c03bg3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "group": "High-CTR YouTube Visual Systems",
+    "groupDescription": "Thumbnail systems designed for tech review and comparison content, focused on maximizing click-through rate through bold typography, expressive subject framing, product emphasis, and high-contrast visual hierarchy. Each composition is built to stand out in competitive YouTube feeds while clearly communicating price, performance, or comparison hooks.",
+    "items": [
+      {
+        "id": 5,
+        "title": "Tech Review Thumbnail",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771820964/hjWMQCXqCNk-HD_suqrlc.jpg"
+      },
+      {
+        "id": 6,
+        "title": "AI Phone Review",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771821128/Ai_Phone-Review_oa49hk.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Infinix GT 30 Pro Review",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771821126/Review-Infinix_gt_30_pro_yuwbt9.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Video Thumbnail",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771821154/Video-_Thumbnail_nrgqgk.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Jessica Reviews — Redmi Pad SE 8.7",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771821128/Jessica-Reviews-Redmi_Pad_SE_8.7_iytx87.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Heli Reviews — Oppo Reno 13",
+        "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771821128/Heli_Reviews-Oppo-Reno_13_YT_thumbnail_copy_m57djg.jpg"
+      }
+    ]
+  }
+]
+

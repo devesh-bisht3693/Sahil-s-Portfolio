@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Dimensity Series Smartphone Technology Visuals",
+    "description": "Social campaign visuals highlighting Dimensity's core innovations, including HyperEngine gaming, MFRC frame optimization, AI acceleration, intelligent power efficiency, and next-generation 5G connectivity. Designed to translate deep silicon performance into bold, graphical visualisation.",
+    "tag": "Gaming & Performance",
+    "images": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583449/Gaming_ajwjmd.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583457/Hyperengine_Tech_fphfwl.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Dimensity Automotive Platform Visuals",
+    "description": "High-impact social visuals developed to communicate MediaTek's automotive platform capabilities, translating in-vehicle AI, cockpit intelligence, and connected driving systems into immersive, futuristic compositions optimized for digital engagement.",
+    "tag": "Automotive",
+    "images": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583484/MediaTek_Auto_copy_ntewyg.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583512/Everyday_Ai-_Auto_Static_az4w6v.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "MediaTek Filogic Home Connectivity",
+    "description": "Platform-driven social assets developed to showcase MediaTek Filogic's Wi-Fi and connectivity solutions, simplifying advanced networking technologies into accessible, lifestyle-oriented visuals for home and IoT ecosystems.",
+    "tag": "Home & IoT",
+    "images": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583463/MediaTek_powered_Smart_Home_Instagram_1_copy_nfv5hq.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583488/Home_connectivity-LD-1ba_zxlhbo.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "MediaTek Pentonic Smart TV & Entertainment",
+    "description": "Social campaign visuals highlighting MediaTek Pentonic's smart TV capabilities, emphasizing AI picture processing, immersive entertainment, and next-generation display performance through cinematic digital compositions.",
+    "tag": "Smart TV & Display",
+    "images": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583482/SPOTLIGHT_on_TEK_copy_fgcki8.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771583486/SPOTLIGHT_on_TEK_copya_b7p5mm.jpg"
+    ]
+  }
+]

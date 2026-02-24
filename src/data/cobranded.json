@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Motorola Edge 60 Pro × MediaTek Dimensity 8350",
+    "summary": "Enterprise campaign visual developed to highlight MediaTek Dimensity 8350 as the performance core within Motorola Edge 60 Pro. The composition features a semi-exposed device structure, positioning the chipset as the technological hero while preserving Motorola's brand identity and product focus.",
+    "objective": "Create a co-branded launch visual highlighting MediaTek Dimensity as the performance core within partner devices, while preserving each OEM's brand identity and product positioning.",
+    "approach": "Developed a semi-exploded device visualization to expose internal architecture while maintaining the chipset as the central hero element. Balanced lighting, glow integration, and circuitry detailing to convey power, performance, and technical sophistication across different brand tones.",
+    "outcome": "The selected Motorola visual was deployed as a launch-facing campaign asset across digital platforms, including GDN placements and Amazon product advertising. The exploration directions further demonstrate a scalable visual system adaptable across multiple OEM partnerships and chipset tiers.",
+    "tags": ["Co-Branded Campaign", "OEM Partnership", "Product Launch"],
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1764522361/motorola_8350-option-4-GDN-1200x628b_zhle8b.jpg",
+    "type": "case-study"
+  },
+  {
+    "id": 2,
+    "title": "Exploration & Concept Directions",
+    "summary": "Scalable co-branded visual concepts developed to adapt the chipset-hero approach across multiple OEM devices, exploring varying degrees of internal exposure, lighting treatment, and brand tone alignment.",
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1764522262/Device1_kx5m8d.jpg",
+    "tags": ["Visual Exploration", "Device Render"],
+    "type": "exploration"
+  },
+  {
+    "id": 3,
+    "title": "Exploration & Concept Directions",
+    "summary": "Scalable co-branded visual concepts developed to adapt the chipset-hero approach across multiple OEM devices, exploring varying degrees of internal exposure, lighting treatment, and brand tone alignment.",
+    "image": "https://res.cloudinary.com/dr4echl2l/image/upload/v1764486647/Vivo_x300_exploaded_view_a9arah.jpg",
+    "tags": ["Visual Exploration", "Device Render"],
+    "type": "exploration"
+  }
+]
+

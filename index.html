@@ -1,34 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <title>Sahil Chauhan – Graphic Designer Portfolio</title>
+    <title>Sahil Chauhan – Graphic Designer & Illustrator Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio of Sahil Chauhan, a graphic designer crafting bold visual identities, brand systems, and digital experiences."
+      content="Portfolio of Sahil Chauhan, a graphic designer & illustrator crafting bold visual identities, brand systems, and digital experiences."
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else if (theme === 'dark' || !theme) {
+          document.documentElement.classList.add('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
-  <body class="bg-slate-950 text-slate-50">
-    <!-- Hidden Netlify form for build-time detection -->
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      style="display:none"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <input name="name" />
-      <input name="email" />
-      <textarea name="project"></textarea>
-      <input name="bot-field" />
-    </form>
-
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-  </html>
-
-
+</html>

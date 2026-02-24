@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "NVIDIA x MediaTek - AI Factory Visual Transformation",
+    "summary": "Enterprise hero visual developed for MediaTek's AI Factory initiative and featured on NVIDIA's Success Stories platform.",
+    "objective": "Translate a text-based brief into a fully custom enterprise visual depicting AI interaction within a large-scale data center environment, aligned with MediaTek's AI Factory narrative and campaign standards.",
+    "approach": "Interpreted the written concept and strategically selected a base image to support the envisioned setting. The environment was reconstructed through controlled lighting transformation, color grading, and spatial depth refinement to simulate realistic infrastructure. Custom holographic interface elements were designed and integrated to reinforce the AI narrative while maintaining enterprise brand alignment.",
+    "outcome": "The final visual was integrated into MediaTek's AI Factory campaign and featured on both NVIDIA's official Success Stories page and MediaTek's homepage. The placement reflects alignment with enterprise-level campaign standards and cross-brand visual consistency.",
+    "beforeImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771408366/ff128a45ca_2000x1126_uivgjm.jpg",
+    "afterImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771489212/Stock-1a_ctv1uu.jpg",
+    "links": [
+      { "label": "NVIDIA Success Story", "url": "https://www.nvidia.com/en-us/case-studies/mediatek-ai-factory/" },
+      { "label": "MediaTek", "url": "https://www.mediatek.com" }
+    ],
+    "tags": ["Enterprise Campaign", "AI Visualization", "Environmental Reconstruction"]
+  },
+  {
+    "id": 2,
+    "title": "MediaTek - NRF Retail Visual Experience",
+    "summary": "Custom retail visualization developed for MediaTek's NRF showcase, illustrating an AI-enabled shopping experience within a connected IoT environment.",
+    "objective": "Develop a fully custom retail-focused visual for MediaTek's NRF showcase, illustrating an AI-enabled shopping experience within a connected retail environment. The visual needed to communicate digital personalization and IoT integration in a way suitable for both campaign and physical event deployment.",
+    "approach": "Interpreted a concept describing a shopper interacting with digitally visualized outfit selections within a smart retail space. A base image was strategically selected and transformed through environmental reconstruction, lighting refinement, and spatial adjustments to simulate a connected retail environment. Custom interface overlays were designed to convey real-time digital interaction while maintaining realism and alignment with MediaTek's event branding.",
+    "outcome": "Originally created for use within an IoT customer retail video, the visual was later selected for large-format deployment at MediaTek's NRF 2026 booth. The artwork was printed and integrated into the main exhibition wall environment, supporting the event's connected retail narrative and reinforcing its role as a campaign-level visual asset.",
+    "beforeImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771492719/49376e5828_2000x1126_unz61p.jpg",
+    "afterImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771492718/Custom_image_HQd_low-2_aql2rk.jpg",
+    "links": [
+      { "label": "LinkedIn Post", "url": "https://www.linkedin.com/posts/mediatek_mediatek-nrf2026-smartretail-activity-7417257480432365568-7HaN" }
+    ],
+    "tags": ["Event Visual", "Tech Campaign", "Advanced Compositing"]
+  },
+  {
+    "id": 3,
+    "title": "MediaTek - ASIC Innovation Campaign",
+    "summary": "Long-format campaign infographic designed to translate complex ASIC and data center capabilities into a structured visual narrative, highlighting MediaTek's 28-year silicon design legacy.",
+    "objective": "Convert detailed technical information about MediaTek's ASIC and AI-era capabilities into a clear, structured, and visually engaging infographic suitable for campaign and event use.",
+    "approach": "Organized dense technical content into a progressive narrative structure, guiding viewers from industry challenges to MediaTek's solutions and ecosystem capabilities. Established strong visual hierarchy through modular sections, icon systems, and contrast-based typography. Emphasized the \"28 Years of Silicon Design\" milestone as the central legacy marker to reinforce authority and long-term industry presence.",
+    "outcome": "Delivered a campaign-ready long-format infographic that balanced technical depth with accessibility, supporting MediaTek's positioning within the AI and data center ecosystem.",
+    "croppedImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771483844/ASIC_-IOT_studies_wzyaoc.jpg",
+    "fullImage": "https://res.cloudinary.com/dr4echl2l/image/upload/v1771414886/ASIC-INFOGRAPHIC_clean-August_ihxs23.jpg",
+    "links": [],
+    "tags": ["Data Visualization", "Campaign Infographic", "Product Communication"]
+  }
+]
+

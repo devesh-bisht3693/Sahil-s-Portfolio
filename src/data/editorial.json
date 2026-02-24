@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "MTK Europe Newsletter — Q1 2025",
+    "description": "Structured publication systems developed for newsletters and whitepapers, focused on typographic hierarchy, modular layouts, and clarity in technical storytelling. Designed to translate dense engineering narratives into readable, brand-aligned editorial formats.",
+    "pdf": null,
+    "pages": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400348/MTK_Europe_Newsletter_Q-1_2025__page-0001_x0aral.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400349/MTK_Europe_Newsletter_Q-1_2025__page-0007_fwwrjh.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400349/MTK_Europe_Newsletter_Q-1_2025__page-0015_sqpzng.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400349/MTK_Europe_Newsletter_Q-1_2025__page-0016_pvkfun.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Anti-Interference Technology for Wi-Fi — Whitepaper",
+    "description": "Structured publication systems developed for newsletters and whitepapers, focused on typographic hierarchy, modular layouts, and clarity in technical storytelling. Designed to translate dense engineering narratives into readable, brand-aligned editorial formats.",
+    "pdf": null,
+    "pages": [
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400311/Anti-Interference_Technology_for_Wi-Fi_Networking_WhitePaper_pages-to-jpg-0001_y6v5nl.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771400312/Anti-Interference_Technology_for_Wi-Fi_Networking_WhitePaper_pages-to-jpg-0005_aglrld.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771571971/Anti-Interference_Technology_for_Wi-Fi_Networking_WhitePaper_pages-to-jpg-0007_mp19fc.jpg",
+      "https://res.cloudinary.com/dr4echl2l/image/upload/v1771571969/Anti-Interference_Technology_for_Wi-Fi_Networking_WhitePaper_pages-to-jpg-0018_ma77eu.jpg"
+    ]
+  }
+]
+
