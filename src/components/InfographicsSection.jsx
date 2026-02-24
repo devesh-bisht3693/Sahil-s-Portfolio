@@ -201,7 +201,7 @@ function FlipCard({ item, index }) {
         className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800/70 bg-slate-50 dark:bg-slate-900/50 shadow-sm cursor-pointer transition-all duration-300 hover:border-cyan-300 dark:hover:border-cyan-400/60 hover:shadow-lg dark:hover:shadow-cyan-500/5"
         onClick={() => setModalOpen(true)}
       >
-        <div className="relative aspect-[4/5] overflow-hidden">
+        <div className="relative aspect-square overflow-hidden">
           <img
             src={item.frontImage}
             alt={item.title}
@@ -276,7 +276,7 @@ function InfographicCard({ item, index }) {
         className="group relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800/70 bg-slate-50 dark:bg-slate-900/50 shadow-sm cursor-pointer transition-all duration-300 hover:border-cyan-300 dark:hover:border-cyan-400/60 hover:shadow-lg dark:hover:shadow-cyan-500/5"
         onClick={() => setModalSrc(fullImage)}
       >
-        <div className="relative aspect-[4/5] overflow-hidden">
+        <div className="relative aspect-square overflow-hidden">
           <img
             src={displayImage}
             alt={item.title}
@@ -337,7 +337,7 @@ export function InfographicsSection() {
       id="infographics"
       className="border-b border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-950 transition-colors"
     >
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24 lg:px-14">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24 lg:px-8">
         {/* ── Section heading ── */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -346,7 +346,7 @@ export function InfographicsSection() {
           transition={{ duration: 0.7, ease: [0.19, 1, 0.22, 1] }}
           className="mb-12 md:mb-16"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+          <p className="section-heading">
             Technical Infographics
           </p>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl transition-colors">

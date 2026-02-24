@@ -174,7 +174,7 @@ export function MotionSection() {
       id="motion"
       className="bg-slate-50 dark:bg-slate-950/80 transition-colors"
     >
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24 lg:px-14">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24 lg:px-8">
         {/* ── Section heading ── */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -183,7 +183,7 @@ export function MotionSection() {
           transition={{ duration: 0.7, ease: [0.19, 1, 0.22, 1] }}
           className="mb-12 md:mb-16"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+          <p className="section-heading">
             Motion Extensions
           </p>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl transition-colors">

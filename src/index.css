@@ -107,6 +107,11 @@ body:is(.dark *) {
   transform: rotateY(180deg);
 }
 
+/* ── Section heading label ── */
+.section-heading {
+  @apply text-xl font-semibold uppercase tracking-[0.3em] text-cyan-600 dark:text-cyan-400;
+}
+
 /* ── Animate pulse for cursor blink ── */
 @keyframes cursor-blink {
   0%, 50% { opacity: 1; }

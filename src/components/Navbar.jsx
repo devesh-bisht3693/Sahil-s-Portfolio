@@ -37,7 +37,7 @@ export function Navbar() {
 
   return (
     <>
-      <motion.header
+    <motion.header
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
@@ -46,34 +46,39 @@ export function Navbar() {
             ? 'bg-white/80 dark:bg-slate-950/80 shadow-lg shadow-slate-200/20 dark:shadow-slate-950/40 border-b border-slate-200 dark:border-slate-800/80 backdrop-blur-xl'
             : 'bg-transparent'
         }`}
-      >
+    >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
           {/* Logo */}
           <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-3 group">
-            <div className="relative h-9 w-9 overflow-hidden rounded-2xl bg-gradient-to-br from-cyan-400 via-sky-500 to-fuchsia-500 p-[1px] shadow-glow-sm">
-              <div className="flex h-full w-full items-center justify-center rounded-[14px] bg-white dark:bg-slate-950 text-sm font-semibold text-slate-900 dark:text-slate-50 transition-colors">
-                SC
-              </div>
-            </div>
-            <div>
+            <div className="relative h-9 w-9 flex-shrink-0 overflow-hidden rounded-full bg-gradient-to-br from-cyan-400 via-sky-500 to-fuchsia-500 p-[1.5px] shadow-glow-sm">
+              <img
+                src="https://res.cloudinary.com/dr4echl2l/image/upload/w_120,h_120,c_fill,g_face,q_auto,f_auto/v1771916270/Profile_-deck_it1yfk.jpg"
+                alt="Sahil Chauhan"
+                className="h-full w-full rounded-full object-cover"
+                loading="eager"
+              />
+          </div>
+          <div>
               <p className="text-sm font-semibold text-slate-900 dark:text-slate-100 transition-colors">Sahil Chauhan</p>
               <p className="text-[0.65rem] font-medium tracking-[0.2em] text-slate-500 dark:text-slate-400 uppercase transition-colors">Designer &amp; Illustrator</p>
-            </div>
+          </div>
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-1.5 lg:flex">
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="rounded-lg px-3 py-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-cyan-600 dark:hover:text-cyan-300 hover:bg-slate-100 dark:hover:bg-slate-800/50"
+                className="rounded-full bg-gradient-to-br from-cyan-400 via-sky-500 to-fuchsia-500 p-[1.5px] transition-all hover:shadow-glow-sm hover:-translate-y-0.5"
               >
-                {link.label}
+                <span className="block rounded-full bg-white dark:bg-slate-950 px-3 py-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-cyan-600 dark:hover:text-cyan-300">
+                  {link.label}
+                </span>
               </a>
             ))}
-          </nav>
+        </nav>
 
           {/* Right side actions */}
           <div className="flex items-center gap-2">
@@ -164,7 +169,7 @@ export function Navbar() {
                     <line x1="6" y1="6" x2="18" y2="18" />
                   </svg>
                 </button>
-              </div>
+          </div>
               <nav className="flex flex-col gap-1 p-4">
                 {navLinks.map((link, i) => (
                   <motion.a
@@ -181,19 +186,19 @@ export function Navbar() {
                 ))}
               </nav>
               <div className="p-4 border-t border-slate-200 dark:border-slate-800">
-                <a
+          <a
                   href="/Sahil_Chauhan-CV-2026.pdf"
-                  download
+            download
                   className="flex w-full items-center justify-center gap-2 rounded-full bg-cyan-500 dark:bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-white dark:text-slate-950 transition hover:bg-cyan-400 dark:hover:bg-cyan-300"
-                >
+          >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
-                  Download CV
-                </a>
-              </div>
+            Download CV
+          </a>
+        </div>
             </motion.aside>
           </>
         )}

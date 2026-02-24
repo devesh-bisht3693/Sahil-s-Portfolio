@@ -65,7 +65,7 @@ export function ContactSection() {
           className="grid gap-12 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">Contact</p>
+            <p className="section-heading">Contact</p>
             <h2 className="mt-3 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl transition-colors">
               Let&apos;s design something memorable together.
             </h2>

@@ -126,7 +126,7 @@ export function YouTubeSection() {
       id="youtube"
       className="border-b border-slate-200 dark:border-slate-800/80 bg-white dark:bg-slate-950 transition-colors"
     >
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24 lg:px-14">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24 lg:px-8">
         {/* ── Section heading ── */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -135,7 +135,7 @@ export function YouTubeSection() {
           transition={{ duration: 0.7, ease: [0.19, 1, 0.22, 1] }}
           className="mb-12 md:mb-16"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+          <p className="section-heading">
             YouTube & Video Platform Visuals
           </p>
           <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl transition-colors">

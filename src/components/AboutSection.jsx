@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export function AboutSection() {
   return (
     <section id="about" className="border-b border-slate-800/80 bg-slate-950">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 md:items-start">
           {/* ── Left: Text content ── */}
           <motion.div

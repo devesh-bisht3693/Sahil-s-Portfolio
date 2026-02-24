@@ -24,7 +24,7 @@ const services = [
 export function ServicesSection() {
   return (
     <section id="services" className="border-b border-slate-800/80 bg-slate-950/90">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-20">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20 lg:px-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="section-heading">Services</p>
