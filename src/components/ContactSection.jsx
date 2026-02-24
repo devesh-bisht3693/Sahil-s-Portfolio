@@ -22,24 +22,30 @@ export function ContactSection() {
     setStatus('submitting');
 
     try {
-      const res = await fetch('http://localhost:3001/api/contact', {
+      const formData = new FormData(e.target);
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formValues),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
       });
 
-      const data = await res.json();
-
-      if (res.ok && data.success) {
+      if (res.ok) {
         setStatus('success');
         showToast('Message sent successfully! I\'ll get back to you soon.', 'success');
         setFormValues({ name: '', email: '', subject: '', message: '' });
       } else {
-        throw new Error(data.error || 'Failed to send');
+        throw new Error('Failed to send');
       }
     } catch {
-      setStatus('error');
-      showToast('Something went wrong. Please try again or email me directly.', 'error');
+      // Netlify Forms only work on deployed site; treat as success in dev
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        setStatus('success');
+        showToast('(Dev mode) Form would be submitted on Netlify.', 'success');
+        setFormValues({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+        showToast('Something went wrong. Please try again or email me directly.', 'error');
+      }
     }
 
     setTimeout(() => setStatus('idle'), 3000);
@@ -78,8 +84,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 transition-colors">Email</p>
-                  <a href="mailto:sahilchauhan@email.com" className="text-sm font-medium text-cyan-600 dark:text-cyan-300 hover:text-cyan-500 dark:hover:text-cyan-200 transition-colors">
-                    sahilchauhan@email.com
+                  <a href="mailto:sahil.chauhan111171@gmail.com" className="text-sm font-medium text-cyan-600 dark:text-cyan-300 hover:text-cyan-500 dark:hover:text-cyan-200 transition-colors">
+                    sahil.chauhan111171@gmail.com
                   </a>
                 </div>
               </div>
@@ -113,11 +119,19 @@ export function ContactSection() {
           </div>
 
           <form
+            name="contact"
             method="POST"
-            action="#"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
             className="space-y-4 rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/40 p-6 transition-all duration-300 hover:border-cyan-200 dark:hover:border-cyan-400/40 hover:shadow-lg dark:hover:shadow-glow-sm"
           >
+            <input type="hidden" name="form-name" value="contact" />
+            <p className="hidden">
+              <label>
+                Don&apos;t fill this out: <input name="bot-field" />
+              </label>
+            </p>
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="space-y-1.5">
                 <label htmlFor="name" className="text-xs font-medium text-slate-700 dark:text-slate-200 transition-colors">
