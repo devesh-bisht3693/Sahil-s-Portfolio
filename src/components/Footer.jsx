@@ -88,11 +88,8 @@ export function Footer() {
         </div>
 
         {/* Divider + copyright */}
-        <div className="mt-8 border-t border-slate-200 dark:border-slate-800 pt-6 flex flex-col gap-2 text-center text-[0.75rem] text-slate-400 dark:text-slate-500 sm:flex-row sm:justify-between transition-colors">
+        <div className="mt-8 border-t border-slate-200 dark:border-slate-800 pt-6 text-center text-[0.75rem] text-slate-400 dark:text-slate-500 transition-colors">
           <p>© {new Date().getFullYear()} Sahil Chauhan. All rights reserved.</p>
-          <p>
-            Built with React, Tailwind CSS &amp; Framer Motion.
-          </p>
         </div>
       </div>
     </footer>
