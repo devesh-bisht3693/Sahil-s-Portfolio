@@ -69,10 +69,10 @@ export function Footer() {
           {/* Email + back to top */}
           <div className="flex flex-col items-center gap-3 md:items-end">
             <a
-              href="mailto:sahilchauhan@email.com"
+              href="mailto:sahil.chauhan111171@gmail.com"
               className="text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors"
             >
-              sahilchauhan@email.com
+              sahil.chauhan111171@gmail.com
             </a>
             <button
               type="button"
